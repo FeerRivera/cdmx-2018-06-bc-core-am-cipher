@@ -13,7 +13,7 @@ let phrase = prompt("Ingresa el texto");
 
     string.push(character);
 
-    let = joinLetters = string.join ("");
+    let joinLetters = string.join ("");
   }
 //document.getElementById("txtCifrado").value = joinLetters;
   return joinLetters;
@@ -29,7 +29,7 @@ function decipher (phrase){
 
     string.push(character);
 
-    let = joinLetters = string.join ("");
+    let joinLetters = string.join ("");
   }
 //document.getElementById('txtDecifrado').innerHTML = joinLetters2
   return joinLetters;
