@@ -1,6 +1,6 @@
-window.cipher = {
+//window.cipher = {
   // ...
-};
+//};
 
 //let cifrar = document.getElementById('id')
 let phrase = prompt("Ingresa el texto");
