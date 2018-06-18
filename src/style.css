@@ -1,0 +1,31 @@
+#menu{
+        background-color: #66ffa6;
+      }
+      #menu ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      #menu ul li{
+        display: inline-block;
+      }
+      #menu ul li a{
+        color: black;
+        display: block;
+        padding: 20px 20px;
+        text-decoration: none;
+      }
+      #menu ul li a:hover{
+        background-color: #ffe6ff;
+      }
+      body {
+        background: url("https://publicdomainq.net/images/201706/15s/publicdomainq-0010129viz.jpg") no-repeat
+        fixed;
+        background-size: cover;
+    background-position: 50%; 
+      }
+
+      input {
+          padding: 10px;
+          margin: 10px 0 10px 0;
+      }
