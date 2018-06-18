@@ -24,3 +24,8 @@ Al ingresar su texto debe de dar click en el boton de "cifrar", si es lo que el 
 Se arrojara su ensaje en el input de "texto cifrado"
 Si el ya tiene un texto para descifrar solo es necesario que lo ingrese con el salto de letras en el input de "texto cifrado" y dar click en el boton de "descifrar". 
 De no ser asi, cuando su texto salga en el input de "texto cifrado", solo es necesario que vuelva a dar click pero ahora en el boton de descifrar para que nos regrese el texto inicial (descirado).
+
+
+
+
+http://www.elcodigoascii.com.ar/ Para sacar los números que debian levar las formulas segun sea el caso, para mayusculas, minusculas y espacio.  
