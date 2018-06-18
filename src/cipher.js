@@ -1,38 +1,53 @@
-//var phrase = prompt("Ingresa el texto");
-function cipher() {
-    let phrase = document.getElementById("txt").value.toUpperCase();
-    let key = parseInt(document.getElementById("salto").value);
-//console.log(phrase,key);
-    let string = [];
-    for (let i = 0; i < phrase.length; i++) {
+window.cipher = {
+offset: 33,
 
-        let character = String.fromCharCode((phrase.charCodeAt(i) -65+key)%26+65); //declaramos la Variable character que leer� la palabra y con String.fromCharCode nos devolver� la cadena mediante el uso de secuencia de valores//
-//console.log(character);
-        string.push(character);
-    }
-    let joinLetters = string.join("");
-    document.getElementById("txtCifrado").value = joinLetters;
-    return joinLetters;
+encode: (offset,string) => {
+
+ let str = [];
+
+for (let i = 0; i < string.length; i++) { //recorre todo el string
+  if (string.charCodeAt(i) == 32){
+    character = String.fromCharCode(string.charCodeAt(i));
+    str.push(character); //convierte de letra a ascii y de ascii a letra
+  } else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122){
+    let character = String.fromCharCode((string.charCodeAt(i) -97+ parseInt(offset))%26+97);
+    str.push(character);//condicion para letras minusculas
+  }else {
+ let character = String.fromCharCode((string.charCodeAt(i) -65+ parseInt(offset))%26+65);
+ str.push(character);// condicion para mayusculas
 }
-
-
-function decipher() {
-    let phrase2 = document.getElementById("txtCifrado").value.toUpperCase();
-    let key = parseInt(document.getElementById("salto").value);
-
-   let string = [];
-    for (let i = 0; i < phrase2.length; i++) {
-        let character2 = String.fromCharCode((phrase2.charCodeAt(i) +65-key)%26+65); //declaramos la Variable character que leer� la palabra y con String.fromCharCode nos devolver� la cadena mediante el uso de secuencia de valores//
-//console.log(character2);
-        string.push(character2);
 }
-      let joinLetters2 = string.join("");
-    document.getElementById("txtDecifrado").value = joinLetters2;
-    return joinLetters2;
+ let joinLetters = str.join("");
+txtCif.value= joinLetters;
+},
+
+
+decode: (offset,string) => {
+
+  let str = [];
+  let character2 = "";
+ for (let i = 0; i < string.length; i++) {
+   if (string.charCodeAt(i) == 32){
+     character = String.fromCharCode(string.charCodeAt(i));
+     str.push(character);
+   } else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122){
+     if ((((string.charCodeAt(i) +90- parseInt(offset))%26)+92)>= 92 && (((string.charCodeAt(i) +90- parseInt(offset))%26)+92<=96)){
+       let character = String.fromCharCode(((string.charCodeAt(i) +90- parseInt(offset))%26)+118);
+       str.push(character);
+     }
+     else {
+       let character = String.fromCharCode(((string.charCodeAt(i) +90- parseInt(offset))%26)+92);
+       str.push(character);
+     }
+
+   }else {
+  let character = String.fromCharCode((string.charCodeAt(i) +65- parseInt(offset))%26+65);
+  str.push(character);
+ }
+
+ let joinLetters2 = str.join("");
+ txtDes.value= joinLetters2;
 }
+},
 
-
-//console.log(decipher(cipher(phrase)));
-//window.cipher = {
-  // ...
-//};
+};
