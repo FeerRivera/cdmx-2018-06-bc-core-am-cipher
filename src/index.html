@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+<center>
+    <h1>Cifrado Cesar</h1>
     <p>Selecciona cuantas letras quieres saltar</p>
     <!--Usuario selecciona saltos que quiere dar-->
-    <input type="number" name="" id="salto">
+   <input type="number" name="" id="salto">
     <p>Ingresa el texto</p>
     <!--pone texto que quiere cifrar-->
     <input type="text" name="texto" id="txt">
@@ -19,13 +21,14 @@
     <!-- nos imprime el texto descifrado-->
     <input type="text" name="" id="txtDecifrado">
     <br>
-    <input type="button" name="" value="Cifrar" onclick="cipher()">
-    <input type="button" name="" value="Descifrar" onclick="decipher()">
-
-
     <!-- ejecuta la funcion de cifrar y descifrado-->
+    <input id= "cifrar" type="button" name="" value="Cifrar" >
+    <input id= "descifrar" type="button" name="" value="Descifrar" >
+  </center>
+
     <div id="root"></div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
+
