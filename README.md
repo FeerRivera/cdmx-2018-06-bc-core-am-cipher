@@ -30,4 +30,4 @@ De no ser asi, cuando su texto salga en el input de "texto cifrado", solo es nec
 
 http://www.elcodigoascii.com.ar/ Para sacar los números que debian levar las formulas segun sea el caso, para mayusculas, minusculas y espacio.  
 
-Encontre una pagina para hacer diagramas e hice el mio https://www.lucidchart.com/invitations/accept/9c6e87da-61a2-4966-b8f2-04ee490ae140
+Encontre una pagina para hacer diagramas e hice el mio porque mi compu no tiene word :P file:///C:/Users/TurnoAM/Downloads/DIAGRAMA%20CIFRADO.pdf
