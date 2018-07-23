@@ -1,31 +1,52 @@
-#menu{
-        background-color: #66ffa6;
-      }
-      #menu ul{
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-      #menu ul li{
-        display: inline-block;
-      }
-      #menu ul li a{
-        color: black;
-        display: block;
-        padding: 20px 20px;
-        text-decoration: none;
-      }
-      #menu ul li a:hover{
-        background-color: #ffe6ff;
-      }
-      body {
+* {
+box-sizing: border-box;
+}
+
+.col {
+  float: left;
+}
+body {
         background: url("https://publicdomainq.net/images/201706/15s/publicdomainq-0010129viz.jpg") no-repeat
         fixed;
         background-size: cover;
-    background-position: 50%; 
+    background-position: 50%;
+
+
       }
 
-      input {
+input[type=text] {
           padding: 10px;
           margin: 10px 0 10px 0;
+          cursor: pointer;
+
+
       }
+  input[type=number] {
+                padding: 10px;
+
+                cursor: pointer;
+
+            }
+            input[type=button] {
+                          padding: 10px;
+
+                          cursor: pointer;
+
+
+                      }
+
+p{
+  font-family: Ranchers;
+  font-size: 30px;
+}
+h1{
+  font-family: Ranchers;
+  font-size: 50px;
+  text-align: center;
+
+}
+
+.buttons {
+  display: block;
+  padding: 50px;
+}
