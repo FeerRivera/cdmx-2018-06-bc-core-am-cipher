@@ -4,9 +4,10 @@ box-sizing: border-box;
 
 .col {
   float: left;
+  padding: 40px;
 }
 body {
-        background: url("https://publicdomainq.net/images/201706/15s/publicdomainq-0010129viz.jpg") no-repeat
+        background-color: #FAF0DD;
         fixed;
         background-size: cover;
     background-position: 50%;
@@ -15,19 +16,28 @@ body {
       }
 
 input[type=text] {
+  font-family: 'Orbitron', sans-serif;
           padding: 10px;
           margin: 10px 0 10px 0;
           cursor: pointer;
-
+          border-radius: 38px 38px 38px 38px;
+          -moz-border-radius: 38px 38px 38px 38px;
+          -webkit-border-radius: 38px 38px 38px 38px;
+          border: 0px solid #000000;
 
       }
   input[type=number] {
+    font-family: 'Orbitron', sans-serif;
                 padding: 10px;
 
                 cursor: pointer;
-
+                border-radius: 38px 38px 38px 38px;
+                -moz-border-radius: 38px 38px 38px 38px;
+                -webkit-border-radius: 38px 38px 38px 38px;
+                border: 0px solid #000000;
             }
             input[type=button] {
+              font-family: 'Orbitron', sans-serif;
                           padding: 10px;
 
                           cursor: pointer;
@@ -36,16 +46,16 @@ input[type=text] {
                       }
 
 p{
-  font-family: Ranchers;
+font-family: 'Orbitron', sans-serif;
   font-size: 30px;
+  padding: 10px;
 }
 h1{
-  font-family: Ranchers;
+  font-family: 'Orbitron', sans-serif;
   font-size: 50px;
   text-align: center;
 
 }
-
 .buttons {
   display: block;
   padding: 50px;
